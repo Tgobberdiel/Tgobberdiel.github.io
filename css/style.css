@@ -115,11 +115,13 @@ main{
 }
 #right-arrow img{
     width: 50px;
-
 }
 
 #left-arrow { 
   left:10%; 
+}
+#left-arrow img{
+    width: 50px;
 }
 
 /*About section icons and colums*/
