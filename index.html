@@ -19,7 +19,12 @@
         </div>
 
         <nav>
-          <ul>
+        <div class="hamburger">
+          <div class="top"><div class="bar"></div></div>
+          <div class="middle"><div class="bar"></div></div>
+          <div class="bottom"><div class="bar"></div></div>
+        </div>
+          <ul id="menu" class="clearfix">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
@@ -29,22 +34,24 @@
 
       <main>
       <div id="carousel-container" class="food-systems">
-        <div class="arrow" id="right-arrow"><img src="images/right-arrow.png"></div>
-        <div class="arrow" id="left-arrow"><img src="images/left-arrow.png"></div>
+        <div class="overbanner">
+          <h2>Project Managment</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div> 
       </div>
-        <div id="column-container">
+        <div id="column-container" class="clearfix">
           
           <div class="col-wrapper">
               <div  class="column"id="column1">
                 <img src="http://www.fillmurray.com/g/200/300">
-                <h2>Food Systems</h2>
+                <h2>Project Managment</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
               </div>
             </div>
             <div class="col-wrapper">
               <div class="column" id="column2">
                 <img src="http://www.fillmurray.com/g/200/300">
-                <h2>Project Management</h2>
+                <h2>Food Systems</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iusto quis tempore sit incidunt nobis </p>
               </div>
             </div>
@@ -63,12 +70,14 @@
               </div>
             </div>
           </div>
-      <div id="testimonial-container">
-        <div class="testimonial-image">
-        <img src="http://www.fillmurray.com/g/200/300">
-        </div>
-        <div class="testimonial-text">
+      <div id="testimonial-container" class="clearfix">
+        <div class="overtestimonial">
+          <div class="clearfix testimonial-image">
+            <img src="http://www.fillmurray.com/g/200/300">
+          </div>
+          <div class="clearfix testimonial-text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis harum rem architecto quisquam nesciunt quidem, veniam omnis sequi nihil, mollitia aspernatur quis ut optio laudantium error voluptas aliquam assumenda.</p>
+          </div>
         </div>
       </div>
       </main>
@@ -78,6 +87,7 @@
       </footer>
 
     </div><!-- Container -->
-
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>

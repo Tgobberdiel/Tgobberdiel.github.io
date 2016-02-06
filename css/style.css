@@ -38,6 +38,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+h2 {
+ color: rgba(44, 82, 105, 1);
+}
+
 /*The Navigation and header*/
 
 header{
@@ -45,7 +49,6 @@ header{
 	width: 100%;
 	position: fixed;
 	height: 100px;
-	z-index: 20;
 	font-size: 18px;
 }
 
@@ -79,6 +82,13 @@ nav li a{
 	color: #fff;
 }
 
+.hamburger {
+  display: none;
+  float: right;
+  cursor: pointer;
+  margin: 25px 0;
+}
+
 main{
 	padding-top: 100px;
 }
@@ -93,39 +103,21 @@ main{
 #carousel-container{
   width: 100%;
   height: 500px;
-  z-index: -10;
 }
 .food-systems{
-  background: url("../images/food-systems-consulting.jpg") no-repeat center center fixed;
-  -webkit-background-size: auto 125%;
-  -moz-background-size: auto 125%;
-  -ms-background-size: auto 125%;
-  -o-background-size: auto 125%;
-  background-size: auto 125%;
-
-}
-.arrow  { 
-  cursor:pointer; 
-  top:50%; 
-  color:#fff; 
-  font-size:24px;
-  z-index: 0;
-  position: fixed;
+  background: url("../images/food-systems-consulting.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-#right-arrow { 
-  right:10%; 
-}
-#right-arrow img{
-    width: 50px;
-
-}
-
-#left-arrow { 
-  left:10%; 
-}
-#left-arrow img{
-    width: 50px;
+.overbanner {
+  float: left;
+  width: 40%;
+  margin: 5% 10%;
+  padding: 4%;
+  background-color: rgba(255, 255, 255, .7);
 }
 
 /*About section icons and colums*/
@@ -133,9 +125,8 @@ main{
 #column-container{
   max-width: 100%;
   float: left;
-  padding-left: 10%;
-  padding-right: 10%;
-  z-index: 5;
+  padding: 5% 10%;
+  background-color: white;
 }
 .col-wrapper {
   float: left;
@@ -151,7 +142,11 @@ main{
 #testimonial-container{
   width:100%;
   padding: 100px 15% 25px 15%;
-}
+  background: url("../images/food-systems-project-management.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;}
 
 .testimonial-image{
   width: 25%;
@@ -160,9 +155,17 @@ main{
 }
 
 .testimonial-text{
-  width: 50%;
+  width: 60%;
   float: left;
+  padding-left: 5%;
+}
 
+.overtestimonial {
+  float: left;
+  width: 60%;
+  margin: 5% auto;
+  padding: 4%;
+  background-color: rgba(255, 255, 255, .7);
 }
 /******************************************
 /* PAGES
@@ -171,3 +174,44 @@ main{
 /******************************************
 /* SECTIONS
 /******************************************/
+
+/* media Queries when colums get too close */
+@media only screen and (max-width: 1200px){
+
+  .col-wrapper { 
+    width: 50%;
+  }
+
+}
+@media only screen and (max-width: 770px){
+
+  .col-wrapper { 
+    width: 100%;
+  }
+  
+  .hamburger {
+    display: inline-block;
+    padding-top: 0px;
+    margin: 40px 5%;
+    width:30px;
+    height:5px;
+    border:2px solid white;
+    border-radius:10px;
+  }
+
+
+#menu{ 
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: RGBA(44, 82, 105, .9);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 350ms ease-out;
+  }
+#menu.active{
+      max-height: 300px;
+  }
+
+}
