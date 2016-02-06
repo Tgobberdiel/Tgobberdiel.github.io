@@ -42,6 +42,13 @@ h2 {
  color: rgba(44, 82, 105, 1);
 }
 
+h3{
+  color: rgba(44, 82, 105, 1);
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /*The Navigation and header*/
 
 header{
@@ -86,9 +93,24 @@ nav li a{
   display: none;
   float: right;
   cursor: pointer;
-  margin: 25px 0;
+  margin: 35px 0;
 }
 
+.bar{
+    padding-top: 0px;
+    margin: 5px 50px;
+    width:30px;
+    height:4px;
+    border:1.5px solid white;
+    border-radius:10px;
+}
+
+.hamburger:hover .bar{
+  background-color:white;
+  transition: background 0.3s linear;
+}
+
+}
 main{
 	padding-top: 100px;
 }
@@ -103,9 +125,10 @@ main{
 #carousel-container{
   width: 100%;
   height: 500px;
+  padding-top: 100px;
 }
 .food-systems{
-  background: url("../images/food-systems-consulting.jpg");
+  background: url("../images/food-services-project-managment.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -113,7 +136,7 @@ main{
 }
 
 .overbanner {
-  float: left;
+  float: right;
   width: 40%;
   margin: 5% 10%;
   padding: 4%;
@@ -126,6 +149,7 @@ main{
   max-width: 100%;
   float: left;
   padding: 5% 10%;
+
   background-color: white;
 }
 .col-wrapper {
@@ -140,7 +164,7 @@ main{
 
 /*testimonial section*/
 #testimonial-container{
-  width:100%;
+  max-width: 100%;
   padding: 100px 15% 25px 15%;
   background: url("../images/food-systems-project-management.jpg");
   background-size: cover;
@@ -162,10 +186,15 @@ main{
 
 .overtestimonial {
   float: left;
-  width: 60%;
+  width: 100%;
   margin: 5% auto;
   padding: 4%;
   background-color: rgba(255, 255, 255, .7);
+}
+
+#about {
+  width: 100%;
+  background-color: white;
 }
 /******************************************
 /* PAGES
@@ -182,6 +211,19 @@ main{
     width: 50%;
   }
 
+.overtestimonial {
+  text-align: center
+}
+  .testimonial-image{
+  display: none;
+}
+
+.testimonial-text{
+  width: auto;
+  float: none;
+  padding: 5%;
+}
+
 }
 @media only screen and (max-width: 770px){
 
@@ -191,18 +233,15 @@ main{
   
   .hamburger {
     display: inline-block;
-    padding-top: 0px;
-    margin: 40px 5%;
-    width:30px;
-    height:5px;
-    border:2px solid white;
-    border-radius:10px;
   }
 
+  nav ul{
+    padding-left: 10%
+  }
 
-#menu{ 
+  #menu{ 
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: RGBA(44, 82, 105, .9);
@@ -210,7 +249,7 @@ main{
     overflow: hidden;
     transition: max-height 350ms ease-out;
   }
-#menu.active{
+  #menu.active{
       max-height: 300px;
   }
 
