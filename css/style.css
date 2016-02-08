@@ -132,7 +132,7 @@ main{
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
 }
 
 .overbanner {
@@ -227,6 +227,10 @@ main{
 }
 @media only screen and (max-width: 770px){
 
+#logo{
+  width: 175px;
+  padding-top: 10px
+}
   .col-wrapper { 
     width: 100%;
   }
