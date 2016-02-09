@@ -148,7 +148,7 @@ main{
 #column-container{
   max-width: 100%;
   float: left;
-  padding: 5% 10%;
+  padding: 0px 10%;
 
   background-color: white;
 }
@@ -161,7 +161,10 @@ main{
   padding: 50px 15% 25px 15%;
   text-align: center;
 }
-
+.column img{
+  width: 150px;
+  margin: 0 auto;
+}
 /*testimonial section*/
 #testimonial-container{
   max-width: 100%;
@@ -246,12 +249,13 @@ main{
   #menu{ 
     position: absolute;
     top: 80px;
-    left: 0;
+    padding-left: 0;
     width: 100%;
     background-color: RGBA(44, 82, 105, .9);
     max-height: 0;
     overflow: hidden;
     transition: max-height 350ms ease-out;
+    text-align: center;
   }
   #menu.active{
       max-height: 300px;
