@@ -148,7 +148,7 @@ main{
 #column-container{
   max-width: 100%;
   float: left;
-  padding: 0px 10%;
+  padding: 5% 10%;
 
   background-color: white;
 }
@@ -162,7 +162,7 @@ main{
   text-align: center;
 }
 .column img{
-  width: 150px;
+  width: 125px;
   margin: 0 auto;
 }
 /*testimonial section*/
