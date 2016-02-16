@@ -74,7 +74,7 @@ $('.slider').each(function() {
 
 $(document).ready(function(){
 	if ("url:contains('thanks')"){
-	$(this).hide();
+	$("form").hide();
 	$(".thanks-form").css("display", "block");
 	}
 });
