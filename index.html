@@ -11,11 +11,13 @@
     <link rel="shortcut icon" type="image/ico" href="images/food-systems-project-managment_favicon.png"><!-- the favicon -->
   </head>
   <body>
+  <a name="home"></a>
     <div class="container">
 
     <header>
+
         <div class="logo">
-          <img src="images/food-systems-consulting.png" id="logo">
+          <a href="#home"><img src="images/food-systems-consulting.png" id="logo"></a>
         </div>
 
         <nav>
@@ -25,23 +27,41 @@
           <div class="bottom bar"></div>
         </div>
           <ul id="menu" class="clearfix">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
 
       <main>
-      <div id="carousel-container" class="food-systems">
-        <div class="overbanner">
-          <h2>Project Managment</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-        </div> 
+      <div id="carousel-container">
+        <div class="slider">
+          <ul class="slider-list">
+            <li><img src="../Tgobberdiel.github.io/images/food-services-project-managment.jpg" alt="" /></li>
+            <li><img src="http://fillmurray.com/800/300" alt="" /></li>
+            <li><img src="http://fillmurray.com/800/300" alt="" /></li>
+          </ul>
+          <div class="over">
+            <div class="overbanner" id="over1">
+            <h1>Project Managment</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>   
+          </div>
+            <div class="overbanner" id="over2">
+            <h1>Project Managment2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>   
+          </div>
+            <div class="overbanner" id="over3">
+            <h1>Project Managment3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>   
+          </div>
+          </ul>          
+        </div>
       </div>
+      <a name="services"></a>
         <div id="column-container" class="clearfix">
-          
           <div class="col-wrapper">
+          
               <div  class="column"id="column1">
                 <img src="../Tgobberdiel.github.io/images/icon-project-managment.png">
                 <h4>Project Managment</h4>
@@ -71,19 +91,42 @@
             </div>
           </div>
       <div id="testimonial-container" class="clearfix">
-        <div class="overtestimonial">
-          <div class="clearfix testimonial-image">
+        <div class="clearbox">
+          <div class="clearfix over-image">
             <img src="http://www.fillmurray.com/g/200/300">
           </div>
-          <div class="clearfix testimonial-text">
+          <div class="clearfix over-text">
           <h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus debitis harum rem architecto quisquam nesciunt quidem, veniam omnis sequi nihil, mollitia aspernatur quis ut optio laudantium error voluptas aliquam assumenda."</h3>
           </div>
         </div>
       </div>
+      <a name="about"></a>
       <div id="about">
         <div class="column">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maiores aspernatur eos, vel autem illum, molestias numquam odit quidem rerum asperiores ut repellendus enim cumque natus. Vel, blanditiis, minima quisquam ratione impedit nulla eius fugiat praesentium quo aliquid nostrum illum quaerat rem, harum excepturi expedita tempora ullam dolores atque iste saepe! Aspernatur quos cum consectetur, incidunt dolorum necessitatibus obcaecati numquam ea aperiam dolorem, voluptatum, quod dolore perspiciatis modi eius nesciunt nemo consequatur expedita repellendus hic similique explicabo sequi voluptate. Omnis voluptates, qui ad a quasi beatae, excepturi iste accusamus deserunt nemo odit, dolor animi doloribus at voluptatibus rem maxime molestias quae facilis. Amet culpa ratione magnam soluta quod corrupti voluptates et modi sit odit qui eveniet aspernatur ut eos porro animi, iure saepe fugiat labore natus in suscipit cum quisquam. Odio natus laudantium soluta officia dolore dolorum nostrum. Aperiam temporibus dolor eaque autem, maxime ratione, culpa accusantium dignissimos possimus minus error, saepe. Ex est voluptatibus perspiciatis quia exercitationem consectetur, fugiat sunt minus odit nemo. Quos voluptatum provident doloribus qui odio cum doloremque molestias, neque corporis. Veniam explicabo deserunt, alias voluptates fugiat ipsam non ab placeat distinctio commodi. Enim veniam architecto laborum perferendis eius repellendus eaque obcaecati blanditiis doloremque voluptas, numquam ratione nisi dolorum, culpa, voluptatem necessitatibus at aperiam nostrum aspernatur et fuga. Laudantium porro explicabo consequatur. Sunt libero deleniti fuga quaerat aspernatur impedit voluptate, laboriosam autem dignissimos debitis eveniet facilis incidunt, sapiente, porro quos reiciendis id officia quasi voluptatum. Sed alias omnis repellat, nesciunt, reiciendis quo velit qui beatae culpa eius excepturi.  </p>
         </div>
+        <a name="contact"></a>
+      <div id="contact-container" class="clearfix">
+        <div class="clearbox">
+          <h2>Contact us</h2>
+              <p>Want to talk about your Ideas and see how Food & You can help?
+              <br>
+              Send us a message and we'll be in touch!</p>
+                <div>
+          <form action="//formspree.io/tgobberdiel@gmail.com" method="POST" data-parsley-validate>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Name" required="true" data-parsley-error-message="Please write your name here">
+            <label id="email" for="email">Email:</label>
+            <input type="email" name="_replyto" placeholder="Email" required="true" data-parsley-type="email" data-parsley-error-message="Oops! I'm gonna need a valid email, please!">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+          </form>
+          </div>
+          </div>
+        </div>
+      </div>
+
       </div>
       </main>
 
@@ -93,6 +136,8 @@
 
     </div><!-- Container -->
   <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/parsely.min.js"></script>
   <script src="js/main.js"></script>
   </body>
 </html>
+
