@@ -72,7 +72,7 @@ $('.slider').each(function() {
   }
 }); 
 
-$("form").ready(function(){
+$(document).ready(function(){
 	if ("url:contains('thanks')"){
 	$(this).hide();
 	$(".thanks-form").css("display", "block");
