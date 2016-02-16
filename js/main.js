@@ -73,7 +73,7 @@ $('.slider').each(function() {
 }); 
 
 function(){
-	if ("url:contains("thanks")"){
+	if (window.location.href.indexOf("thanks") > -1){
 	$("#form").hide();
 	$(".thanks-form").css("display", "block");
 	}
