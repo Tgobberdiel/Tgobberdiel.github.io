@@ -337,6 +337,12 @@ main{
   background-repeat: no-repeat;
   background-position: top right;}
 
+
+.thanks-form{
+  text-align: center;
+  display: none;
+}
+
 form {
   width: 95%;  
 }
