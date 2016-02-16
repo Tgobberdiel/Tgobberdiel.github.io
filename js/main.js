@@ -72,5 +72,12 @@ $('.slider').each(function() {
   }
 }); 
 
+$(".submit").on("click", function(){
+	if ($("input").prop('value') == "/#thanks.html"){
+	$("form").hide();
+	$(".thanks-form").css("display", "block");
+	}
+});
+
 	
 

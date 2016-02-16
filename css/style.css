@@ -200,9 +200,10 @@ main{
   cursor: pointer;
   position: absolute;
   box-sizing: border-box;
-  background: rgba(255,255,255,.2);
+  background: rgba(255,255,255,.3);
   transform: translateY(-50%);
   border-radius: 0 100px 100px 0;
+  outline: none;
 }
 
  .slider-next {
@@ -296,10 +297,35 @@ main{
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
 }
-
+#why{
+  padding-top: 100px;
+}
 #about {
-  width: 100%;
   background-color: white;
+  text-align: left;
+  padding: 50px 15% 25px 15%;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 5px;
+  width: 300px;
+  margin: 10px;
+  text-align: left;
 }
 
 #contact-container{
@@ -335,6 +361,8 @@ label {
 }
 
 input[type=submit] {
+  width: 50%;
+  margin: 0 auto;
   color: #fff;
   border: none;
   font-weight: 700;
@@ -420,7 +448,7 @@ input[type=submit]:hover {
     top: 80px;
     padding-left: 0;
     width: 100%;
-    background-color: rgba(44, 82, 105, .9);
+    background-color: rgba(0, 150, 200, .7);
     max-height: 0;
     overflow: hidden;
     transition: max-height 350ms ease-out;
