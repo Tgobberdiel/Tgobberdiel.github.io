@@ -74,7 +74,7 @@ $('.slider').each(function() {
 
 $(function() {
 	if (window.location.href.indexOf("thanks") > -1){
-	$("#form").hide();
+	$(".contact-containter").hide();
 	$(".thanks-form").css("display", "block");
 	}
 });
