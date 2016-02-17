@@ -275,7 +275,7 @@ main{
 #testimonial-container{
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px 20% 0px 15%;
+  padding: 70px 20% 70px 15%;
   background: url("../images/food-systems-project-management.jpeg");
   background-size: cover;
   background-attachment: fixed;
@@ -300,13 +300,11 @@ main{
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
 }
-#why{
-  padding-top: 100px;
-}
+
 #about {
   background-color: white;
   text-align: left;
-  padding: 50px 15% 25px 15%;
+  padding: 100px 15%;
 }
 
 .flex-container {
@@ -325,9 +323,9 @@ main{
 }
 
 .flex-item {
-  padding: 5px;
-  width: 300px;
-  margin: 10px;
+  
+  width: 400px;
+  margin-top: 10px;
   text-align: left;
 }
 
