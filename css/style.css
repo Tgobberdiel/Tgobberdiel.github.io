@@ -251,9 +251,12 @@ main{
 #column-container{
   max-width: 100%;
   float: left;
-  padding: 5% 10%;
-
+  padding: 5% 10% 0 10%;
   background-color: white;
+}
+#info{
+   background-color: white;
+  padding: 0 10% 5% 10%;
 }
 .col-wrapper {
   float: left;
