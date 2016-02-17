@@ -77,7 +77,6 @@ $(function() {
 	$("#form").hide();
 	$(".thanks-form").css("display", "block");
 	}
-	console.log("hello")
 });
 
 	
