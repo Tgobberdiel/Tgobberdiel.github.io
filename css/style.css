@@ -167,6 +167,7 @@ main{
   padding: 0;
   position: fixed;
   white-space: nowrap;
+  letter-spacing: -.27em;
   -webkit-transition: -webkit-transform 0.45s cubic-bezier(1, 0.25, 0, 1);
   transition: -webkit-transform 0.45s cubic-bezier(1, 0.25, 0, 1);
   transition: transform 0.45s cubic-bezier(1, 0.25, 0, 1);
