@@ -79,5 +79,46 @@ $(function() {
 	}
 });
 
+
+var text = 0; 
+function testSlide(){    
+  if (text == 0) {
+  $("#over1").css("display", "block");
+  $("#over2").css("display", "none");
+  $("#over3").css("display", "none");
+    }
+  else if (text == 1) {
+  $("#over2").css("display", "block");
+  $("#over1").css("display", "none");
+  $("#over3").css("display", "none");
+    }
+  else if (text == 2) {
+  $("#over1").css("display", "none");
+  $("#over2").css("display", "none");
+  $("#over3").css("display", "block");
+    }
+  }  
+ 
+function reset(){ 
+  if (text == -1){
+    $(text = 2);
+  }
+  else if (text >= 3){
+    $(text = 0);
+  }
+  }
+
+$(".slider-next").on("click", function(){
+  text++;
+  reset();
+  testSlide();
+ });
+
+$(".slider-prev").on("click", function(){
+  text--;
+  reset();
+  testSlide();
+
+ });
 	
 

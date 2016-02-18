@@ -177,9 +177,7 @@ main{
   height: auto;
   background: #ccc;
   list-style: none;
-  min-height: 300px;
   letter-spacing: 0;
-  text-align: center;
   display: inline-block;
 }
 .slider-list > *:nth-child(2n) {
@@ -187,7 +185,7 @@ main{
 }
 .slider-list > * img {
   width: 100%;
-  max-width: 115%;
+  position: center bottom;
   vertical-align: top;
   min-height: 500px;
 }
@@ -307,26 +305,19 @@ main{
   padding: 100px 15%;
 }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+.why-container {
+  margin: 0 auto;
+  text-align: center;
 }
 
-.flex-item {
+.why-column{
   
-  width: 400px;
+  width: 38%;
   margin-top: 10px;
   text-align: left;
+  float: left;
+  padding: 20px 50px;
+  margin: auto;
 }
 
 #contact-container{
@@ -417,26 +408,41 @@ input[type=submit]:hover {
     width: 50%;
   }
 
+
 .overtestimonial {
   text-align: center
 }
-  .testimonial-image{
+  .over-image{
   display: none;
 }
 
-.testimonial-text{
-  width: auto;
+.over-text{
+  width: 80%;
   float: none;
   padding: 5%;
+  text-align: center;
+}
+h3{
+  font-size: 20px;
 }
 
-}
-@media only screen and (max-width: 770px){
+.why-column{
+  
+  width: 100%;
+  padding: 20px 0;
 
-#logo{
-  width: 175px;
-  padding-top: 10px
 }
+@media only screen and (max-width: 800px){
+
+  #logo{
+    width: 175px;
+    padding-top: 10px
+  }
+
+  .logo{
+    padding: 25px 0px 0px 3%;
+    float: left;
+  }
   .col-wrapper { 
     width: 100%;
   }
@@ -448,6 +454,10 @@ input[type=submit]:hover {
   nav ul{
     padding-left: 10%
   }
+
+  .overbanner {
+  width: 72%;
+} 
 
   #menu{ 
     position: absolute;
@@ -464,9 +474,18 @@ input[type=submit]:hover {
       max-height: 300px;
   }
   .slider-list > * img {
-  max-width: 200%;
-  vertical-align: left;
+  width: 200%;
+  vertical-align: center;
   min-height: 500px;
 }
 
+}
+
+@media only screen and (max-width: 450px){
+
+  .slider-list > * img {
+  width: 250%;
+  vertical-align: center;
+  min-height: 500px;
+}
 }
