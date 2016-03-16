@@ -2,7 +2,6 @@
 Project Name: HTML Template
 Client: Your Client
 Author: Your Name
-Developer: @poopsplat in Chicago
 */
 
 /******************************************
@@ -95,8 +94,7 @@ nav li{
 }
 
 nav li a{
-	font-weight: 500;
-	text-decoration: none;
+	  
 	color: #fff;
   transition: color .2s ease-out;
 }
