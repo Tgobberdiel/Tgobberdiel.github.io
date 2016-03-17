@@ -55,7 +55,7 @@ h3{
 }
 h4{
   color: rgba(0, 150, 200, 1);
-  font-size: 25px;
+  font-size: 24px;
 }
 
 /*The Navigation and header*/
@@ -251,20 +251,28 @@ main{
 }
 #info{
    background-color: white;
-  padding: 0 10% 5% 10%;
+  padding: 0 5% 5% 5%;
 }
 .col-wrapper {
   float: left;
-  width: 25%;
+  width: 50%;
   vertical-align: top;
 }
 .column{
-  padding: 50px 15% 25px 15%;
+  padding: 50px 10% 25px 10%;
+  text-align: left;
+}
+.column h4{
   text-align: center;
 }
-.column img{
+.imgcenter{
+  text-align: center;
+}
+.imgcenter img{
   width: 125px;
   margin: 0 auto;
+  text-align: center;
+
 }
 /*testimonial section*/
 #testimonial-container{
@@ -314,12 +322,12 @@ main{
 
 .why-column{
   
-  width: 38%;
+  width: 40%;
   margin-top: 10px;
   text-align: left;
   float: left;
-  padding: 20px 50px;
-  margin: auto;
+  padding: 15px 5%;
+  margin: 0 auto;
 }
 
 #contact-container{
@@ -351,7 +359,7 @@ input, textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: rgba(0, 150, 200, 1);;
+  border-color: rgba(0, 150, 200, 1);
 }
 
 label {
@@ -430,8 +438,8 @@ h3{
 
 .why-column{
   
-  width: 100%;
-  padding: 20px 0;
+  width: 45%;
+  padding: 20px 2.5%;
 
 }
 
@@ -476,6 +484,10 @@ form {
   width: 200%;
   vertical-align: center;
   min-height: 500px;
+}
+.why-column{
+  width: 100%;
+  padding: 20px 1;
 }
 }
 @media only screen and (max-width: 450px){
