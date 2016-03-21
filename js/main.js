@@ -1,3 +1,5 @@
+// Mobile navigation toggle
+
 $(".hamburger").on("click", function(){
 	$("#menu").toggleClass("active");
 });
@@ -17,6 +19,7 @@ $(function() {
   });
 });
 
+//main slider functionality 
 $('.slider').each(function() {
   // Set up vars
   var $slider = $(this),

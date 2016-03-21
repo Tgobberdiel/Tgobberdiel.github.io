@@ -1,5 +1,5 @@
 
-Project Name: HTML Template
+/*Project Name: HTML Template
 Client: Your Client
 Author: Your Name
 */
@@ -94,7 +94,7 @@ nav li{
 }
 
 nav li a{
-	  
+	text-decoration: none;
 	color: #fff;
   transition: color .2s ease-out;
 }
@@ -117,10 +117,12 @@ nav li a:hover {
     height:4px;
     border:1.5px solid white;
     border-radius:10px;
+    background-color:white;
+
 }
 
 .hamburger:hover .bar{
-  background-color:white;
+  background-color: rgba(255, 255, 255, .5);
   transition: background 0.3s linear;
 }
 
@@ -210,7 +212,7 @@ main{
   position: relative;
   float: right;
   width: 40%;
-  margin: 5% 10%;
+  margin: 50px 10%;
   padding: 4%;
   background-color: rgba(255, 255, 255, .7);
 }
@@ -278,28 +280,22 @@ main{
 #testimonial-container{
   max-width: 100%;
   margin: 0 auto;
-  padding: 70px 20% 70px 15%;
-  background: url("../images/food-systems-project-management.jpeg");
+  padding: 70px 15% 70px 15%;
+  background: url("../images/food-systems-project-management_1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: left center;}
 
-.over-image{
-  float: left;
-
-}
-
 .over-text{
   width: 60%;
-  float: left;
-  padding-left: 30px;
+  margin: 0 auto;
 }
 
 .clearbox {
   float: left;
   width: 100%;
-  margin: 5% auto;
+  margin: 12% auto;
   padding: 4%;
   background-color: rgba(255, 255, 255, .8);
 }
@@ -322,17 +318,21 @@ main{
 
 .why-column{
   
-  width: 40%;
+  width: 50%;
   margin-top: 10px;
   text-align: left;
   float: left;
   padding: 15px 5%;
   margin: 0 auto;
 }
+#center{
+  width: 100%
+  ;
+}
 
 #contact-container{
   max-width: 100%;
-  padding: 100px 20% 25px 15%;
+  padding: 100px 15% 0px 15%;
   background: url("../images/food-systems-project-management.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -463,8 +463,10 @@ form {
   }
 
   .overbanner {
-  width: 72%;
-} 
+  width: 80%;
+  text-align: center;
+  margin: 50px 10%;
+  } 
 
   #menu{ 
     position: absolute;
@@ -497,6 +499,10 @@ form {
     padding-top: 10px
   }
 
+  .slider-nav {
+  top: 175px;
+}
+
   .logo{
     padding: 25px 0px 0px 3%;
     float: left;
@@ -509,7 +515,14 @@ form {
 .bar{
     padding-top: 0px;
     margin: 5px 10px;
-
 }
-
+.overbanner{
+  margin-top: 25px
+}
+#contact-container{
+  padding: 100px 0 100px 0;
+}
+#carousel-container{
+  height: 500px;
+}
 }
