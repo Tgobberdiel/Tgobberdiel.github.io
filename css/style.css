@@ -280,7 +280,7 @@ main{
 #testimonial-container{
   max-width: 100%;
   margin: 0 auto;
-  padding: 70px 15% 70px 15%;
+  padding: 70px 15% 10px 15%;
   background: url("../images/food-systems-project-management_1.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -401,6 +401,25 @@ input[type=submit]:hover {
 }
 .parsley-errors-list li {
   list-style: none;
+}
+
+footer{ 
+  text-align: center;
+  background-color: rgba(0, 150, 200, 1);
+  color: white;
+  height: 100%;
+  padding: 1% 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  transition: color .2s ease-out;
+  padding: 0 2%;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, .5);
 }
 
 /******************************************
