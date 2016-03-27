@@ -316,18 +316,14 @@ main{
   text-align: center;
 }
 
-.why-column{
-  
-  width: 50%;
-  margin-top: 10px;
+.why-column{ 
+  width: 45%;
   text-align: left;
   float: left;
-  padding: 15px 5%;
   margin: 0 auto;
 }
 #center{
-  width: 100%
-  ;
+  width: 100%;
 }
 
 #contact-container{
@@ -455,10 +451,8 @@ h3{
 }
 
 .why-column{
-  
   width: 45%;
   padding: 20px 2.5%;
-
 }
 
 form {
