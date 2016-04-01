@@ -490,6 +490,7 @@ form {
     overflow: hidden;
     transition: max-height 350ms ease-out;
     text-align: center;
+    margin: 0 auto;
   }
   #menu.active{
       max-height: 300px;
